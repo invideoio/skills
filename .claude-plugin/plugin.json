@@ -1,7 +1,7 @@
 {
   "name": "invideo",
   "version": "0.1.0",
-  "description": "Make videos with invideo: generate media, edit timelines, and export.",
+  "description": "Connect the agent you already use to invideo's editor. It trims, grades and mixes on your timeline while you watch every change land.",
   "author": {
     "name": "invideo",
     "email": "support@invideo.io"
@@ -16,5 +16,10 @@
     "generation",
     "timeline",
     "export"
-  ]
+  ],
+  "icon": "./assets/logo.png",
+  "privacyPolicyUrl": "https://invideo.io/privacy-policy/",
+  "termsOfServiceUrl": "https://invideo.io/terms-and-conditions/",
+  "supportUrl": "https://help.invideo.io/",
+  "documentationUrl": "https://invideo.io/agents/"
 }
