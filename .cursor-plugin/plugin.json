@@ -1,0 +1,32 @@
+{
+  "name": "invideo",
+  "displayName": "invideo",
+  "version": "0.1.0",
+  "minClientVersions": {
+    "cursor": "3.13.0"
+  },
+  "description": "Make videos with invideo: generate media, edit timelines, and export.",
+  "author": {
+    "name": "invideo",
+    "email": "support@invideo.io"
+  },
+  "homepage": "https://invideo.io",
+  "repository": "https://github.com/invideoio/skills",
+  "license": "Apache-2.0",
+  "logo": "assets/logo.png",
+  "keywords": [
+    "invideo",
+    "video",
+    "video-editing",
+    "generation",
+    "timeline",
+    "export"
+  ],
+  "category": "integrations",
+  "tags": [
+    "invideo",
+    "video",
+    "creative"
+  ],
+  "skills": "./skills/"
+}

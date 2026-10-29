@@ -1,0 +1,20 @@
+{
+  "name": "invideo",
+  "version": "0.1.0",
+  "description": "Make videos with invideo: generate media, edit timelines, and export.",
+  "author": {
+    "name": "invideo",
+    "email": "support@invideo.io"
+  },
+  "homepage": "https://invideo.io",
+  "repository": "https://github.com/invideoio/skills",
+  "license": "Apache-2.0",
+  "keywords": [
+    "invideo",
+    "video",
+    "video-editing",
+    "generation",
+    "timeline",
+    "export"
+  ]
+}

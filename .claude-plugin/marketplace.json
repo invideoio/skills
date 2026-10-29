@@ -1,0 +1,15 @@
+{
+  "name": "invideo",
+  "owner": {
+    "name": "invideo",
+    "email": "support@invideo.io"
+  },
+  "plugins": [
+    {
+      "name": "invideo",
+      "source": "./",
+      "description": "Make videos with invideo: generate media, edit timelines, and export.",
+      "version": "0.1.0"
+    }
+  ]
+}

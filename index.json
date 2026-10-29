@@ -1,0 +1,106 @@
+{
+  "skills": [
+    {
+      "name": "invideo",
+      "description": "Read first for any video with invideo, a professional AI-native video editor: how to connect, the work loop, cost, and every job type: launches, ads, commercials, product and personal videos, invitations, intros, type, explainers, films, shorts, captions.",
+      "files": [
+        "SKILL.md",
+        "references/ad-platform-specs.md",
+        "references/check-your-video.md",
+        "references/cost-rule.md",
+        "references/export-share.md",
+        "references/occasion-slideshow.md",
+        "references/types/ads.md",
+        "references/types/captions.md",
+        "references/types/commercial.md",
+        "references/types/explainer.md",
+        "references/types/interview-cut.md",
+        "references/types/intro-logo.md",
+        "references/types/invitations.md",
+        "references/types/launch-video.md",
+        "references/types/personal-video.md",
+        "references/types/product-video.md",
+        "references/types/review-cut.md",
+        "references/types/short-film.md",
+        "references/types/shorts.md",
+        "references/types/text-animation.md"
+      ]
+    },
+    {
+      "name": "invideo-media",
+      "description": "Get and check media for an invideo video: the person's uploads, stock video, images and music, rights, and the craft of voice-over, music, sound effects, cleanup and dubbing.",
+      "files": [
+        "SKILL.md",
+        "references/voice-music.md"
+      ]
+    },
+    {
+      "name": "invideo-generate",
+      "description": "Generate images, video, voice-over, music, sound effects and 3D for an invideo video: picking and prompting a model, pricing, narration first, retries.",
+      "files": [
+        "SKILL.md",
+        "references/models.md"
+      ]
+    },
+    {
+      "name": "invideo-timeline",
+      "description": "Use for operations depth on an invideo timeline: frame math, tracks and layering, keyframes and motion, speed ramps, grades, LUTs, effects and custom shaders, audio buses, ducking and loudness.",
+      "files": [
+        "SKILL.md",
+        "references/audio.md",
+        "references/color-and-effects.md",
+        "references/keyframes.md"
+      ]
+    },
+    {
+      "name": "invideo-pipeline",
+      "description": "Use for scale and automation: a CSV to many videos, `--json`, idempotency keys, CI with device sign-in, outreach at scale, course batches, bulk orders, and several agents sharing one project.",
+      "files": [
+        "SKILL.md",
+        "references/collaborate.md"
+      ]
+    },
+    {
+      "name": "higgsfield-to-invideo",
+      "description": "Use when the person has clips from Higgsfield and wants a finished video: put the clips in order, add captions and music, export.",
+      "files": [
+        "SKILL.md"
+      ]
+    },
+    {
+      "name": "hyperframes-to-invideo",
+      "description": "Use when the person has a HyperFrames composition and wants it finished in invideo: render it to MP4, upload it, then cut it, caption it, add music and export.",
+      "files": [
+        "SKILL.md"
+      ]
+    },
+    {
+      "name": "magnific-to-invideo",
+      "description": "Use when the person has clips from Magnific and wants a finished video: put the clips in order, add captions and music, export.",
+      "files": [
+        "SKILL.md"
+      ]
+    },
+    {
+      "name": "openedit-to-invideo",
+      "description": "Use when the person has an OpenEdit plan and wants it finished in invideo: render it to MP4, upload it, then cut it, caption it, add music and export.",
+      "files": [
+        "SKILL.md"
+      ]
+    },
+    {
+      "name": "remotion-to-invideo",
+      "description": "Use when the person has a Remotion composition and wants it finished in invideo: render it to MP4, upload it, then cut it, caption it, add music and export.",
+      "files": [
+        "SKILL.md"
+      ]
+    },
+    {
+      "name": "runway-to-invideo",
+      "description": "Use when the person has clips from Runway and wants a finished video: put the clips in order, add captions and music, export.",
+      "files": [
+        "SKILL.md"
+      ]
+    }
+  ]
+}
