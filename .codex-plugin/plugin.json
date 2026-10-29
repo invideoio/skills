@@ -1,7 +1,7 @@
 {
   "name": "invideo",
   "version": "0.1.0",
-  "description": "Make videos with invideo: generate media, edit timelines, and export.",
+  "description": "Connect the agent you already use to invideo's editor. It trims, grades and mixes on your timeline while you watch every change land.",
   "author": {
     "name": "invideo",
     "email": "support@invideo.io",
@@ -21,10 +21,30 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "invideo",
-    "shortDescription": "Generate media, edit timelines, and export videos",
+    "shortDescription": "The agentic video editor",
+    "longDescription": "The agentic video editor for serious creatives. Don't waste time on AI you have to babysit. Do what you love while invideo's AI agents handle the rest.\n\nBring your own agents. Connect the agent you already use to invideo's editor. It trims, grades and mixes on your timeline while you watch every change land. Upload footage, describe the edit, review the cut, export.\n\nNo need to become a prompt engineer. You're an editor, not an AI expert. Describe the edit in plain words, and invideo's editing agent does it on a real multitrack timeline you can take over at any frame.\n\nEdit multiple shots in one go. Nobody wants to make the same change on forty clips by hand. Give invideo's editing agent one direction and it applies it to every shot on the timeline, from cutting the pauses to matching the look.\n\nNever repeat yourself. Life's too short to scrub through hours of footage for one take. invideo's editing agent watches every clip and logs it in memory, so you find any moment by describing it.\n\nTimeline editor: picture Premiere Pro with full AI. Multiplayer mode: collaborate in real time with live cursors. Storyboarding and script writing built in. Filmmaking, advertising, microdrama and social media: direct every shot, stay on brand across every format, and spin one idea into dozens of vertical cuts.\n\nPrivate and secure. SOC 2 and GDPR compliant, ISO aligned.",
     "developerName": "invideo",
-    "category": "Design",
+    "category": "Creativity",
+    "capabilities": [
+      "Trims, grades and mixes on a real multitrack timeline you can take over at any frame",
+      "Applies one direction to every shot: cut the pauses, match the look",
+      "Finds any moment in hours of footage by describing it",
+      "Storyboarding, script writing, captions, voice-over and music",
+      "Export vertical cuts for every channel, on brand across every format"
+    ],
+    "defaultPrompt": [
+      "Trim the cold open",
+      "Grade this to golden hour",
+      "Duck the music under the voice-over and write the captions"
+    ],
     "websiteURL": "https://invideo.io",
-    "logo": "./assets/logo.png"
+    "supportURL": "https://help.invideo.io/",
+    "privacyPolicyURL": "https://invideo.io/privacy-policy/",
+    "termsOfServiceURL": "https://invideo.io/terms-and-conditions/",
+    "brandColor": "#161616",
+    "brandColorDark": "#FEE32D",
+    "composerIcon": "./assets/icon.svg",
+    "logo": "./assets/logo.png",
+    "screenshots": []
   }
 }

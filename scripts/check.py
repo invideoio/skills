@@ -88,6 +88,12 @@ def check_manifests():
     except (OSError, ValueError, KeyError, IndexError) as e:
         problems.append(f".claude-plugin/marketplace.json: {e}")
     try:
+        codex = json.loads((ROOT / ".agents/plugins/marketplace.json").read_text())
+        if [p.get("name") for p in codex["plugins"]] != ["invideo"]:
+            problems.append(".agents/plugins/marketplace.json: must list the single plugin 'invideo'")
+    except (OSError, ValueError, KeyError) as e:
+        problems.append(f".agents/plugins/marketplace.json: {e}")
+    try:
         versions["VERSION"] = (ROOT / "VERSION").read_text().strip()
     except OSError as e:
         problems.append(f"VERSION: {e}")

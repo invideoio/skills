@@ -6,7 +6,9 @@
   &nbsp;invideo skills
 </h1>
 
-Skills that teach agents to create and edit videos with [invideo](https://invideo.io), a professional AI-native video editor. Your agent edits a real timeline; you watch every change land in the browser and can take over at any frame.
+[invideo](https://invideo.io) is the agentic video editor for serious creatives. Don't waste time on AI you have to babysit. Do what you love while invideo's AI agents handle the rest.
+
+Bring your own agent. These skills connect the agent you already use to invideo's editor. It trims, grades and mixes on your timeline while you watch every change land. Describe the edit in plain words, and the agent does it on a real multitrack timeline you can take over at any frame. Upload footage, describe the edit, review the cut, export.
 
 The skills hold what an agent cannot work out on its own: how invideo works, what each kind of video needs, and how to check the result. Exact commands come from invideo itself: `invideo --help`, or `get_help` over MCP.
 
@@ -54,6 +56,8 @@ On first use the agent installs the [invideo CLI](https://github.com/invideoio/c
 
 - `skills/<name>/SKILL.md`, with depth in `references/` that loads only when a job needs it
 - `.claude-plugin/`, `.codex-plugin/`, `.cursor-plugin/`: one manifest per agent, same version as `VERSION`
+- `.claude-plugin/marketplace.json` and `.agents/plugins/marketplace.json`: the Claude Code and Codex marketplaces, one plugin each
+- `assets/`: the app icon from [brand.invideo.io](https://brand.invideo.io), used as the listing logo
 - `index.json`: the skills index
 - `scripts/check.py`: size budgets, paths, skill names, versions and the index
 
