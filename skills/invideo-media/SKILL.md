@@ -1,7 +1,6 @@
 ---
 name: invideo-media
 description: "Get and check media for an invideo video: the person's uploads, stock video, images and music, rights, and the craft of voice-over, music, sound effects, cleanup and dubbing."
-allowed-tools: Bash(invideo:*), Bash(~/.local/bin/invideo:*), mcp__invideo__*
 ---
 
 # Media in invideo

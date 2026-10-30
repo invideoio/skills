@@ -10,7 +10,7 @@
       "name": "invideo",
       "source": "./",
       "description": "Connect the agent you already use to invideo's editor. It trims, grades and mixes on your timeline while you watch every change land.",
-      "version": "0.1.0"
+      "version": "0.1.1"
     }
   ]
 }

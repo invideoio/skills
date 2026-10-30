@@ -1,7 +1,6 @@
 ---
 name: invideo-generate
 description: "Generate images, video, voice-over, music, sound effects and 3D for an invideo video: picking and prompting a model, pricing, narration first, retries."
-allowed-tools: Bash(invideo:*), Bash(~/.local/bin/invideo:*), mcp__invideo__*
 ---
 
 # Generation in invideo

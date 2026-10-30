@@ -1,6 +1,6 @@
 {
   "name": "invideo",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Connect the agent you already use to invideo's editor. It trims, grades and mixes on your timeline while you watch every change land.",
   "author": {
     "name": "invideo",
@@ -43,7 +43,7 @@
     "termsOfServiceURL": "https://invideo.io/terms-and-conditions/",
     "brandColor": "#161616",
     "brandColorDark": "#FEE32D",
-    "composerIcon": "./assets/icon.svg",
+    "composerIcon": "./assets/icon.png",
     "logo": "./assets/logo.png",
     "screenshots": []
   }

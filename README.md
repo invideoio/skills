@@ -1,10 +1,6 @@
-<h1>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/invideo-symbol-white.svg">
-    <img alt="" src="assets/invideo-symbol-black.svg" height="40" align="absmiddle">
-  </picture>
-  &nbsp;invideo skills
-</h1>
+![invideo](assets/icon.png)
+
+# invideo skills
 
 [invideo](https://invideo.io) is the agentic video editor for serious creatives. Don't waste time on AI you have to babysit. Do what you love while invideo's AI agents handle the rest.
 
@@ -57,7 +53,7 @@ On first use the agent installs the [invideo CLI](https://github.com/invideoio/c
 - `skills/<name>/SKILL.md`, with depth in `references/` that loads only when a job needs it
 - `.claude-plugin/`, `.codex-plugin/`, `.cursor-plugin/`: one manifest per agent, same version as `VERSION`
 - `.claude-plugin/marketplace.json` and `.agents/plugins/marketplace.json`: the Claude Code and Codex marketplaces, one plugin each
-- `assets/`: the app icon from [brand.invideo.io](https://brand.invideo.io), used as the listing logo
+- assets: the app icon from [brand.invideo.io](https://brand.invideo.io), used as the listing logo
 - `index.json`: the skills index
 - `scripts/check.py`: size budgets, paths, skill names, versions and the index
 
