@@ -1,7 +1,6 @@
 ---
 name: runway-to-invideo
 description: "Use when the person has clips from Runway and wants a finished video: put the clips in order, add captions and music, export."
-allowed-tools: Bash(invideo:*), Bash(~/.local/bin/invideo:*), mcp__invideo__*
 ---
 
 # Runway clips to invideo

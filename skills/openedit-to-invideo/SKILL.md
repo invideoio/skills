@@ -1,7 +1,6 @@
 ---
 name: openedit-to-invideo
 description: "Use when the person has an OpenEdit plan and wants it finished in invideo: render it to MP4, upload it, then cut it, caption it, add music and export."
-allowed-tools: Bash(invideo:*), Bash(~/.local/bin/invideo:*), mcp__invideo__*
 ---
 
 # OpenEdit to invideo

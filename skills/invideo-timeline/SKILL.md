@@ -1,7 +1,6 @@
 ---
 name: invideo-timeline
 description: "Use for operations depth on an invideo timeline: frame math, tracks and layering, keyframes and motion, speed ramps, grades, LUTs, effects and custom shaders, audio buses, ducking and loudness."
-allowed-tools: Bash(invideo:*), Bash(~/.local/bin/invideo:*), mcp__invideo__*
 ---
 
 # Timeline operations

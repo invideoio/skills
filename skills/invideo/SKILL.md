@@ -1,7 +1,6 @@
 ---
 name: invideo
 description: "Read first for any video with invideo, a professional AI-native video editor: how to connect, the work loop, cost, and every job type: launches, ads, commercials, product and personal videos, invitations, intros, type, explainers, films, shorts, captions."
-allowed-tools: Bash(invideo:*), Bash(~/.local/bin/invideo:*), mcp__invideo__*
 ---
 
 # invideo
