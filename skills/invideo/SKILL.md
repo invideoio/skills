@@ -13,7 +13,7 @@ The CLI is the way in wherever there is a shell: it is faster and always current
   - Sign in with `invideo auth login`. It opens a browser tab and returns once the person approves. Run it with a long timeout, or in the background while you check `invideo auth status`, and carry on as soon as it shows a user. No browser (ssh, a container): `INVIDEO_NO_BROWSER=1 invideo auth login`, and send the person the link and code in one message.
 - **Claude and ChatGPT on the web:** use the official invideo connector. **Any other agent:** use the MCP server at `https://mcp.invideo.io/mcp`.
 
-Setup per client, with the fixes for what goes wrong: https://docs.invideo.io/agents and https://docs.invideo.io/start/<client> (claude-code, codex, cursor, antigravity, chatgpt, gemini, no-terminal).
+Setup per client, with fixes: https://docs.invideo.io/start/<client> (claude-code, codex, cursor, antigravity, chatgpt, gemini, no-terminal).
 
 ## How it works
 Over MCP, read `get_help` before your first edit; it is invideo's own guide. Over the CLI, `invideo <command> <verb> --help` gives each command's flags.
@@ -58,6 +58,6 @@ These files hold what we've learned about making each kind of video well, and ag
 | Captions | `references/types/captions.md` |
 | Export, share pages, project files | `references/export-share.md` |
 
-The docs hold a page per job with the exact calls, checked against the live tools: https://docs.invideo.io/llms.txt lists them all, and a page's markdown is its URL plus `.md`. When a job is not in the table above, or you need the exact fields, fetch its page. References: https://docs.invideo.io/reference/cli, https://docs.invideo.io/reference/mcp-tools, https://docs.invideo.io/reference/edit-operations, https://docs.invideo.io/reference/models.
+The docs hold a page per job with the exact calls: https://docs.invideo.io/llms.txt lists them; a page's markdown is its URL plus `.md`. References: https://docs.invideo.io/reference/{cli,mcp-tools,edit-operations,models}.
 
 Uploads, stock, voice and music: `/invideo-media`. Generating images, video and audio: `/invideo-generate`. Keyframes, color, effects, mixing: `/invideo-timeline`. Many videos, scripted runs, several agents: `/invideo-pipeline`.
