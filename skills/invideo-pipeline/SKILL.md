@@ -32,6 +32,8 @@ At scale you stop editing videos and start editing the system that makes them. E
 
 ## Scripted runs
 
+Worked scripts with the exact commands: https://docs.invideo.io/how-to/ci-and-servers and https://docs.invideo.io/how-to/developers/csv-to-videos (markdown: add `.md`).
+
 - Use the CLI with `--json` and read the JSON.
 - Give each generation its own `--idempotency-key` (the row's id and step, like `row-42-voice`), so a rerun finds the earlier generations instead of making them again.
 - `invideo status <urls…> --wait` follows generations and exports until they finish.
