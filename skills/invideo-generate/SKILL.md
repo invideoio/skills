@@ -19,5 +19,6 @@ Read `/invideo` first. Generate what the person's files and stock can't give (`/
 | The need | Read |
 |---|---|
 | Choosing and prompting a model | `references/models.md` |
+| Model ids by job, the dry run and the retirement rule | https://docs.invideo.io/reference/models (markdown: add `.md`) |
 | Voice-over, music and sound craft | `/invideo-media` |
 | Checking what came back | `/invideo-media` |

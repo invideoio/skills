@@ -32,6 +32,8 @@ Move one reveal, keep everything else. Every edit touches only what it must; if 
 
 ## What to read
 
+Every `edit_timeline` operation with its fields, and the effect, transition and audio effect names: https://docs.invideo.io/reference/edit-operations (markdown: add `.md`).
+
 | The need | Read |
 |---|---|
 | Easing, overlap, keyframing type, scale, position and opacity, speed ramps | `references/keyframes.md` |

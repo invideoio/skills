@@ -32,6 +32,10 @@ npx skills add invideoio/skills
 
 On first use the agent installs the [invideo CLI](https://github.com/invideoio/cli) and opens a browser tab for you to sign in. Agents without a shell, like claude.ai, use the hosted MCP server at `https://mcp.invideo.io/mcp` as a connector.
 
+## Docs
+
+The full docs are at [docs.invideo.io](https://docs.invideo.io): a start page per client ([Claude Code](https://docs.invideo.io/start/claude-code), [Codex](https://docs.invideo.io/start/codex), [Cursor](https://docs.invideo.io/start/cursor), [Antigravity](https://docs.invideo.io/start/antigravity), [ChatGPT](https://docs.invideo.io/start/chatgpt), [Gemini](https://docs.invideo.io/start/gemini), [no terminal](https://docs.invideo.io/start/no-terminal)), a page per job with the exact calls, and the references for the [CLI](https://docs.invideo.io/reference/cli), the [MCP tools](https://docs.invideo.io/reference/mcp-tools), the [edit operations](https://docs.invideo.io/reference/edit-operations) and the [models](https://docs.invideo.io/reference/models). Agents: [llms.txt](https://docs.invideo.io/llms.txt) lists every page, and a page's markdown is its URL plus `.md`.
+
 ## Skills
 
 | Skill | For |
