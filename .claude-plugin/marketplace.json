@@ -1,0 +1,16 @@
+{
+  "name": "invideo",
+  "description": "The agentic video editor for serious creatives. Skills that connect your agent to invideo's editor.",
+  "owner": {
+    "name": "invideo",
+    "email": "support@invideo.io"
+  },
+  "plugins": [
+    {
+      "name": "invideo",
+      "source": "./",
+      "description": "Connect the agent you already use to invideo's editor. It trims, grades and mixes on your timeline while you watch every change land.",
+      "version": "0.1.2"
+    }
+  ]
+}

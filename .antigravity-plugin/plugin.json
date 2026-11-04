@@ -1,0 +1,29 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "invideo",
+  "displayName": "invideo",
+  "version": "0.1.2",
+  "description": "Connect your agent to invideo's AI-native video editor. It trims, grades and mixes on a real timeline while you watch every change land.",
+  "logo": "assets/logo-antigravity.png",
+  "author": {
+    "name": "invideo",
+    "email": "support@invideo.io",
+    "url": "https://invideo.io"
+  },
+  "homepage": "https://docs.invideo.io/start/antigravity",
+  "repository": "https://github.com/invideoio/skills",
+  "license": "Apache-2.0",
+  "keywords": [
+    "invideo",
+    "video",
+    "video-editing",
+    "generation",
+    "timeline",
+    "export"
+  ],
+  "suggestedPrompts": [
+    "List my invideo projects",
+    "Cut the clips in this folder into a 30-second vertical ad with captions and music",
+    "Grade this video to golden hour and duck the music under the voice-over"
+  ]
+}

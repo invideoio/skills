@@ -1,0 +1,25 @@
+{
+  "name": "invideo",
+  "version": "0.1.2",
+  "description": "Connect the agent you already use to invideo's editor. It trims, grades and mixes on your timeline while you watch every change land.",
+  "author": {
+    "name": "invideo",
+    "email": "support@invideo.io"
+  },
+  "homepage": "https://invideo.io",
+  "repository": "https://github.com/invideoio/skills",
+  "license": "Apache-2.0",
+  "keywords": [
+    "invideo",
+    "video",
+    "video-editing",
+    "generation",
+    "timeline",
+    "export"
+  ],
+  "icon": "./assets/logo.png",
+  "privacyPolicyUrl": "https://invideo.io/privacy-policy/",
+  "termsOfServiceUrl": "https://invideo.io/terms-of-service/",
+  "supportUrl": "https://help.invideo.io/",
+  "documentationUrl": "https://invideo.io/agents/"
+}
