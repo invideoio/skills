@@ -61,7 +61,7 @@ The full docs are at [docs.invideo.io](https://docs.invideo.io): a start page pe
 ## Layout
 
 - `skills/<name>/SKILL.md`, with depth in `references/` that loads only when a job needs it
-- `.claude-plugin/`, `.codex-plugin/`, `.cursor-plugin/`, `.antigravity-plugin/`: one manifest per agent, same version as `VERSION`
+- `.claude-plugin/`, `.codex-plugin/`, `.cursor-plugin/`, `.antigravity-plugin/`: one manifest per agent, all on the same version
 - `.antigravity-plugin/README.md`: the Antigravity Marketplace listing page
 - `.claude-plugin/marketplace.json` and `.agents/plugins/marketplace.json`: the Claude Code and Codex marketplaces, one plugin each
 - assets: the app icon from [brand.invideo.io](https://brand.invideo.io), used as the listing logo
