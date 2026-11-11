@@ -24,6 +24,8 @@ MANIFESTS = [
 ]
 # The Antigravity Marketplace asks for a 120-160 character description and a bundled logo.
 ANTIGRAVITY_DESCRIPTION = (120, 160)
+ANTIGRAVITY_PROMPT_SKILL = "invideo"
+ANTIGRAVITY_STOPWORDS = set("add basics build cloud database dev fix gcp google guidance plugin setup use".split())
 
 PATH_RE = re.compile(r"`(references/[\w./-]+\.md)`|\]\(((?!https?:)[\w./-]+\.md)\)")
 SKILL_RE = re.compile(r"`/(invideo[\w-]*|[\w-]+-to-invideo)`")
@@ -117,6 +119,45 @@ def check_manifests():
         problems.append("versions differ: " + ", ".join(f"{p} {v}" for p, v in versions.items()))
     return problems
 
+def antigravity_prompt_scores(prompt, skills):
+    stem = lambda w: w[:-1] if len(w) > 4 and w.endswith("s") else w
+    words = {form for w in re.split(r"[^a-z0-9]+", prompt.lower()) if w for form in (w, stem(w))}
+    hit = lambda w: w in words or stem(w) in words
+    scores = {}
+    for name, description in skills.items():
+        score = sum(2 if w in ANTIGRAVITY_STOPWORDS else 10 for w in re.split(r"[-_]+", name.lower()) if w and hit(w))
+        score += sum(
+            1
+            for w in re.split(r"[^a-z0-9]+", description.lower())
+            if len(w) >= 4 and w not in ANTIGRAVITY_STOPWORDS and hit(w)
+        )
+        scores[name] = score
+    return scores
+
+
+def check_antigravity_prompts():
+    try:
+        prompts = json.loads((ROOT / ".antigravity-plugin/plugin.json").read_text()).get("suggestedPrompts", [])
+    except (OSError, ValueError):
+        return []
+    skills = {}
+    for d in SKILLS.iterdir():
+        if (d / "SKILL.md").is_file():
+            skills[d.name] = (frontmatter((d / "SKILL.md").read_text()) or {}).get("description", "")
+    problems = []
+    for prompt in prompts:
+        scores = antigravity_prompt_scores(prompt, skills)
+        want = scores.pop(ANTIGRAVITY_PROMPT_SKILL, 0)
+        top = max(scores.values(), default=0)
+        if want <= top:
+            rivals = ", ".join(sorted(n for n, s in scores.items() if s == top))
+            problems.append(
+                f".antigravity-plugin/plugin.json: suggested prompt {prompt!r} opens {rivals} ({top}),"
+                f" not {ANTIGRAVITY_PROMPT_SKILL} ({want})"
+            )
+    return problems
+
+
 def check_index():
     """index.json, served at /.well-known/skills/index.json, lists every skill folder with its files."""
     try:
@@ -142,12 +183,12 @@ def check_index():
 
 
 def main():
-    problems = check_skills() + check_manifests() + check_index()
+    problems = check_skills() + check_manifests() + check_antigravity_prompts() + check_index()
     for p in problems:
         print(f"✗ {p}")
     if problems:
         sys.exit(1)
-    print("✓ skills within budget; paths, skill names, versions and index resolve")
+    print("✓ skills within budget; paths, skill names, versions, Antigravity prompts and index resolve")
 
 
 if __name__ == "__main__":
