@@ -66,7 +66,6 @@ The full docs are at [docs.invideo.io](https://docs.invideo.io): a start page pe
 - `.claude-plugin/marketplace.json` and `.agents/plugins/marketplace.json`: the Claude Code and Codex marketplaces, one plugin each
 - assets: the app icon from [brand.invideo.io](https://brand.invideo.io), used as the listing logo
 - `index.json`: the skills index
-- `scripts/check.py`: size budgets, paths, skill names, versions and the index
 
 ## License
 
