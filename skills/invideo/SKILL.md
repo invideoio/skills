@@ -9,7 +9,7 @@ invideo is a professional AI-native video editor for filmmakers, advertisers, pr
 ## How to connect
 The CLI is the way in wherever there is a shell: it is faster and always current. Settle access once and use it for the whole session.
 - **Agents with a terminal** (Claude Code, Codex, Antigravity, Hermes, OpenClaw and others): use the invideo CLI, even when invideo MCP tools are also visible. `invideo auth status` shows a user: you are in.
-  - No CLI: tell the person in one line, then install it from invideo's GitHub: `curl -fsSL https://raw.githubusercontent.com/invideoio/cli/main/install.sh | sh`. It writes `~/.local/bin/invideo` with no sudo; if that folder isn't on `PATH`, use the full path. Where the script can't run: `brew install invideoio/tap/invideo`, `npm install -g invideo` or `uv tool install invideo`.
+  - No CLI: tell the person in one line, then install it: `npm install -g invideo`, `brew install invideoio/tap/invideo` or `uv tool install invideo`; more ways at https://github.com/invideoio/cli#install. Last resort, when nothing installs: run each `invideo <command>` as `npx -y invideo@latest <command>`.
   - Sign in with `invideo auth login`. It opens a browser tab and returns once the person approves. Run it with a long timeout, or in the background while you check `invideo auth status`, and carry on as soon as it shows a user. No browser (ssh, a container): `INVIDEO_NO_BROWSER=1 invideo auth login`, and send the person the link and code in one message.
 - **Claude and ChatGPT on the web:** use the official invideo connector. **Any other agent:** use the MCP server at `https://mcp.invideo.io/mcp`.
 

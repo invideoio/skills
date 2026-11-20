@@ -36,7 +36,7 @@ Any agent, skills only:
 npx skills add invideoio/skills
 ```
 
-On first use the agent installs the [invideo CLI](https://github.com/invideoio/cli) and opens a browser tab for you to sign in. Agents without a shell, like claude.ai, use the hosted MCP server at `https://mcp.invideo.io/mcp` as a connector.
+On first use the agent installs the [invideo CLI](https://github.com/invideoio/cli) with npm (or Homebrew or uv) and opens a browser tab for you to sign in. Agents without a shell, like claude.ai, use the hosted MCP server at `https://mcp.invideo.io/mcp` as a connector.
 
 ## Docs
 
