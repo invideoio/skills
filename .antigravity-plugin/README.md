@@ -6,17 +6,13 @@ Works in the Antigravity app and the `agy` CLI.
 
 ## Before you start
 
-- An invideo account. Sign up at [invideo.io](https://invideo.io).
-- A terminal the agent can use. The plugin works through the [invideo CLI](https://github.com/invideoio/cli), not an MCP server.
+An invideo account. Sign up at [invideo.io](https://invideo.io). Nothing to install: the plugin connects invideo's MCP server.
 
 ## First use
 
-On your first video request the agent:
+On your first video request, Antigravity asks you to sign in to invideo. A browser tab opens: sign in, choose the workspaces the agent may use, and come back to Antigravity. You can also sign in ahead of time from Customizations, under the invideo plugin.
 
-1. Installs the invideo CLI if it is missing. It is a single binary in `~/.local/bin`, with no sudo. The agent tells you before it installs.
-2. Runs `invideo auth login`, which opens a sign-in tab in your browser. Sign in, choose the workspaces the agent may use, and come back to Antigravity.
-
-No browser (SSH, a container, a cloud machine): the agent signs in with `INVIDEO_NO_BROWSER=1` and sends you a link and code to approve on another device. The agent never asks for your password.
+The agent never asks for your password. In the Antigravity app the project opens beside the chat, where you watch the agent's edits land on the timeline, play them back and edit by hand; in the `agy` CLI every result comes with a link that opens it in invideo.
 
 ## What it costs
 

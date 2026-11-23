@@ -21,6 +21,7 @@
     "timeline",
     "export"
   ],
+  "mcpServers": "./.antigravity-plugin/mcp_config.json",
   "suggestedPrompts": [
     "List my invideo projects",
     "Edit the clips in this folder into a 30-second vertical ad in invideo with captions and music",
